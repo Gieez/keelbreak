@@ -33,5 +33,8 @@ Ship wake communicates velocity. Cannon recoil, hit flashes and water ripples co
 ## Copy Rules
 English game UI. Plain action verbs and exact controls. No em dashes, promotional claims or fake metrics.
 
+## Competitive campaign revision
+Preserve dark nautical identity while replacing the sparse single arena with four distinct sectors: harbor blockade, reef convoy, caldera signal capture, fortress dreadnought. Persist campaign progression and medals locally, offer meaningful weapon/refit choices, show mission objectives and unit roles. Split state/config, combat simulation, presentation, UI and storage into explicit classic-script modules for offline browser compatibility. All dossier shots must be genuine states reached by playing campaign, not staged test fixtures. Capture active combat, objective pressure, campaign progression and debrief at max 1280px.
+
 ## Forbidden Patterns
 No SaaS card grid, stock art, external fonts, fabricated screenshots, purple glows, login gates or network dependencies. Game rules override unrelated website route conventions.
