@@ -1,4 +1,4 @@
-import { cpSync, mkdirSync, readFileSync, readdirSync, writeFileSync } from 'node:fs';
+import { cpSync, mkdirSync, readFileSync, readdirSync, writeFileSync, existsSync } from 'node:fs';
 import { join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { buildDossier } from './vendor/makefun-game.ts';
@@ -24,6 +24,10 @@ for (const name of screenshotNames) {
     throw new Error(`Screenshot outside grader limits: ${name}`);
 }
 mkdirSync(out, { recursive: true });
+// Require fresh output rather than silently shipping files left by an older revision.
+for (const name of ['game', 'screenshots']) {
+  if (existsSync(join(out, name))) throw new Error('Use a fresh MAKEFUN_OUTPUT_DIR: ' + name + ' already exists');
+}
 cpSync(join(root, 'game'), join(out, 'game'), { recursive: true });
 cpSync(join(root, 'screenshots'), join(out, 'screenshots'), { recursive: true });
 writeFileSync(join(out, 'dossier.json'), buildDossier(out, {

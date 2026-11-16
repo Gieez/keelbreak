@@ -36,5 +36,8 @@ English game UI. Plain action verbs and exact controls. No em dashes, promotiona
 ## Competitive campaign revision
 Preserve dark nautical identity while replacing the sparse single arena with four distinct sectors: harbor blockade, reef convoy, caldera signal capture, fortress dreadnought. Persist campaign progression and medals locally, offer meaningful weapon/refit choices, show mission objectives and unit roles. Split state/config, combat simulation, presentation, UI and storage into explicit classic-script modules for offline browser compatibility. All dossier shots must be genuine states reached by playing campaign, not staged test fixtures. Capture active combat, objective pressure, campaign progression and debrief at max 1280px.
 
+## Presentation revision after round 3
+Keep the nautical palette and layout. Separate the renderer into primitives, terrain, vessel art, combat effects and tactical charts, with a small scene compositor. Show actual per-sector medals and times on victory, with the refits selected during this run. Capture title, volcanic signal objective, fortress combat and earned campaign victory at 1280x900. No fabricated progression or edited images.
+
 ## Forbidden Patterns
 No SaaS card grid, stock art, external fonts, fabricated screenshots, purple glows, login gates or network dependencies. Game rules override unrelated website route conventions.
